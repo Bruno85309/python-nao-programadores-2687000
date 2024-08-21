@@ -6,3 +6,20 @@
 # 3.2 Caso o número seja divisível por 5, substitua-o por "Buzz"
 # 3.3 Caso o número seja divisível por 3 e 5, substitua-o por "FizzBuzz"
 
+lista = list(range(15,31))
+print(lista)
+indice = 0
+
+for num in lista:
+  if (num % 3 == 0) and (num % 5 == 0):
+    lista[indice] = 'FizzBuzz'
+  elif num % 3 == 0:
+    lista[indice] = 'Fizz'
+  elif num % 5 == 0:
+    lista[indice] = 'Buzz'
+  else:
+    lista[indice] = num
+  
+  indice += 1
+
+print(lista)
